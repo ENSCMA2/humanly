@@ -5,13 +5,9 @@ import csv
 import nltk
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
-from nltk import ngrams
-import string
 from nltk.stem import PorterStemmer
 from nltk.stem import WordNetLemmatizer
 import matplotlib.pyplot as plt
-from wordcloud import WordCloud
-from collections import Counter
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import LinearSVC, SVC, NuSVC
 from pprint import pprint
@@ -19,11 +15,7 @@ from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.multiclass import OneVsRestClassifier
 from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score
 from sklearn.model_selection import train_test_split
-from operator import itemgetter
-import pandas as pd
 import numpy as np
-from sklearn.naive_bayes import GaussianNB
-from scipy.sparse import csr_matrix
 import time
 
 
