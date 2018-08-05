@@ -4,6 +4,15 @@ Humanly is a linear SVM multi-label classifier that detects whether text is toxi
 
 My experiments and results can be found at https://medium.com/ai4allorg/making-the-internet-a-safer-place-with-ai-f97cf46b3f16.
 
+## Requirements
+
+Python 2.7+ or 3.4+. Packages: NLTK, scikit-learn, NumPy, SciPy. To install these packages, run:
+```sh
+pip install numpy
+pip install scipy
+pip install sklearn
+pip install nltk
+```
 ## Usage
 
 Download the training data from https://drive.google.com/file/d/19BmCuhMdYAPafpWP6Ei0ZvlxDCXEUkat/view?usp=sharing and rename it as 'train.csv'.
