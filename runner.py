@@ -17,6 +17,7 @@ from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_sc
 from sklearn.model_selection import train_test_split
 import numpy as np
 import time
+from scipy.sparse import csr_matrix
 
 
 stop_words = stopwords.words("english")
@@ -75,7 +76,6 @@ vectorised_user_data = vectorizer.transform(user_data)
 
 while(user_input != "quit"):
 	predictions = classifier.predict(vectorised_user_data)
-	print(predictions)
 	answer(predictions[0].tolist())
 	user_input = input("Tell me something else!\n")
 	user_data = np.array([user_input])
