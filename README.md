@@ -4,6 +4,7 @@ Humanly is a linear SVM multi-label classifier that detects whether text is toxi
 
 ## Usage
 
+Download the training data from https://drive.google.com/file/d/19BmCuhMdYAPafpWP6Ei0ZvlxDCXEUkat/view?usp=sharing and rename it as 'train.csv'.
 ```sh
 python runner.py
 ```
